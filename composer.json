@@ -1,0 +1,17 @@
+{
+    "name": "juanc/erp-comida",
+    "description": "Desenvolvimento  de um Erp para restaurante e bar",
+    "type": "no",
+    "license": "no",
+    "autoload": {
+        "psr-4": {
+            "Juanc\\ErpComida\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yes"
+        }
+    ],
+    "require": {}
+}

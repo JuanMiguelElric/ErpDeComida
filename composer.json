@@ -1,18 +1,15 @@
 {
     "name": "juanc/erp-comida",
-    "description": "Desenvolvimento  de um Erp para restaurante e bar",
-    "type": "no",
-    "license": "no",
-
-    "authors": [
-        {
-            "name": "yes"
-        }
-    ],
-    "require": {},
     "autoload": {
         "psr-4": {
-            "Juanc\\ErpComida\\": "src/"
+            "src\\":"src/"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "JuanMiguelElric",
+            "email": "oliveirajuan243@gmail.com"
+        }
+    ],
+    "require": {}
 }

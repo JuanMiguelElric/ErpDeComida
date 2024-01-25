@@ -34,7 +34,7 @@ class Router
         [
             'get'=>[
                 '/ContasaReceber'=> 'ContasaReceberController',
-                '/CadastrarFuncionário'=>'CadastrarFuncionario',
+                '/CadastrarFuncionário'=> fn()=>self::load('CadastrarFuncionarioController','index'),
                 '/CadastrodeCardapio'=>'CadastrarCardapioController',
                 '/'=> 'HomeController',
             ],

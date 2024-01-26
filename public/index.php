@@ -2,6 +2,6 @@
 
 use src\Routes\Router;
 
-require './vendor/autoload.php';
+require '../vendor/autoload.php';
 
 Router::execute();

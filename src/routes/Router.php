@@ -33,10 +33,10 @@ class Router
         return
         [
             'get'=>[
-                '/ContasaReceber'=> 'ContasaReceberController',
-                '/CadastrarFuncionário'=> fn()=>self::load('CadastrarFuncionarioController','index'),
-                '/CadastrodeCardapio'=>'CadastrarCardapioController',
-                '/'=> 'HomeController',
+                '/contasareceber'=> 'ContasaReceberController',
+                '/cadastrarfuncionario'=> fn()=>self::load('CadastrarFuncionarioController','index'),
+                '/cadastrodecardapio'=> fn()=> self::load('CadastrarCardapioController','Cardapio'),
+                '/'=> fn() =>  self::load('HomeController','index'),
             ],
             'post'=>[],
             'put'=>[],
@@ -60,7 +60,7 @@ class Router
             }
             $router = $routes[$request][$uri];
             if(!is_callable($router)){
-                throw new Exception("Error Processing Request");
+                throw new Exception("Nao exites");
                 
             }
             $router();

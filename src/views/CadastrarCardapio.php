@@ -1,4 +1,15 @@
 <?php $this->layout('master') ?>
 
-<h1>Cardapio</h1>
-<p>avassaldor</p>
+<div class="container-fluid p-5">
+    <h1>Cadastrar Refeição</h1>
+
+    <div>
+        <form action="">
+            <Label>
+            </Label>
+
+        </form>
+    </div>
+    
+
+</div>

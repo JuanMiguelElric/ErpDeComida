@@ -13,7 +13,7 @@
     <title>EachErp</title>
 </head>
 <body>
-    <nav class="navbar navbar-warning bg-warning fixed-top">
+    <nav class="navbar navbar-danger bg-danger text-white fixed-top">
         <a href="/" class="navbar-brand flex-grow-1">
             aa
         </a>

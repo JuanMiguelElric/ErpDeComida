@@ -9,6 +9,7 @@ use src\helpers\Uri;
 class Router
 {
     const CONTROLLER_NAMESPACE = 'src\\controllers';
+    //função para verificar se os controller e method existe
     public static function load (string $controller, string $method){
         try {
             //code...
@@ -28,6 +29,7 @@ class Router
             echo $th->getMessage();
         }
     }
+    //função com array de objetos das rotas get,post,put e delete
     public static function Routes ():array
     {
         return
@@ -35,8 +37,13 @@ class Router
             'get'=>[
                 '/contasareceber'=> 'ContasaReceberController',
                 '/cadastrarfuncionario'=> fn()=>self::load('CadastrarFuncionarioController','index'),
+                '/funcionario'=> fn()=>self::load('CadastrarFuncionarioController','funcionario'),
                 '/cadastrodecardapio'=> fn()=> self::load('CadastrarCardapioController','Cardapio'),
                 '/'=> fn() =>  self::load('HomeController','index'),
+                '/pedidosrecebidos'=> fn()=> self::load('PedidosRecebidosController','Pedidos'),
+                '/cozinha'
+                
+
             ],
             'post'=>[],
             'put'=>[],

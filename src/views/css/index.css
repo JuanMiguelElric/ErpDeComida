@@ -1,0 +1,8 @@
+.navbar ul li {
+    margin: 0.3em 1em;
+ }
+ 
+.navbar ul li .divider{
+    border-bottom: #999898 1px solid;
+    margin: 0.3em auto;
+ }
